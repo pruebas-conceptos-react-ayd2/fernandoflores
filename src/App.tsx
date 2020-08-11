@@ -1,17 +1,15 @@
 import React from 'react';
 import './App.css';
 
-function Square() {
-    return (
-        <button className="square">
-            { }
-        </button>
-    );
-}
+const Square = ({value}: { value: number }) => (
+    <button className="square">
+        {value}
+    </button>
+);
 
-function Board() {
+const Board = () => {
   function renderSquare(i: number){
-      return <Square />
+      return <Square value={i} />
   }
   const status = 'Next Player: X';
   return(
