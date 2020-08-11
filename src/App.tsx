@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 const Square = ({value}: { value: number }) => (
-    <button className="square">
+    <button className="square" onClick={() => alert('click')}>
         {value}
     </button>
 );
